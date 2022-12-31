@@ -1,11 +1,10 @@
+use advent_of_code_2021_rust::{d01, d02};
 use clap::Parser;
 use std::fs;
 
-pub mod d01;
-
 type Solution = fn(&str) -> String;
 
-const SOLUTIONS: [[Solution; 2]; 1] = [[d01::p1, d01::p2]];
+const SOLUTIONS: [[Solution; 2]; 2] = [[d01::p1, d01::p2], [d02::p1, d02::p2]];
 
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
