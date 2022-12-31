@@ -22,7 +22,7 @@ pub fn p2(input: &str) -> String {
             "forward" => {
                 x += length;
                 y += aim * length;
-            },
+            }
             "down" => aim += length,
             "up" => aim -= length,
             _ => unreachable!(),
